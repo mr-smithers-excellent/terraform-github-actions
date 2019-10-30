@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'Dockerfile'
 
 jobs:
   docker-build:
@@ -18,5 +20,5 @@ jobs:
           image: mrsmithers/terraform-gh-actions
           registry: docker.io
           tag: 0.12.12
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: mrsmithers
           password: ${{ secrets.DOCKER_PASSWORD }}
