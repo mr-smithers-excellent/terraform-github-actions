@@ -1,8 +1,14 @@
-# Terraform GitHub Actions
-These official Terraform GitHub Actions allow you to run `terraform fmt`, `validate`, `plan` and `apply` on your pull requests to help you review, validate and apply Terraform changes.
+# Fork of Terraform GitHub Actions
 
-## Getting Started
-To get started, check out our documentation: [https://www.terraform.io/docs/github-actions/getting-started/](https://www.terraform.io/docs/github-actions/getting-started/).
+This is a fork of the [official Terraform GitHub Actions repo](https://github.com/hashicorp/terraform-github-actions) that installs tooling on the Docker images utilized for Terraform operations.
+
+## Additional Tooling
+
+* [Google Cloud SDK](https://cloud.google.com/sdk/gcloud/)
+* [Helm](https://helm.sh/)
+* jq
+* bind-tools
+* [BATS](https://github.com/bats-core/bats-core)
 
 ## Actions
 
